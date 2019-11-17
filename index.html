@@ -178,13 +178,13 @@
                                     <input type="text" id="search_my_shake" name="search_my_shake" placeholder="What are you looking for ?">
                                 </form>-->
                                 <div class="row form-group">
-                                    <a href="javascript:void();" class="btn btn-primary" style="margin:1%;font-size: 20px;">All</a>
-                                    <a href="javascript:void();" class="btn btn-primary" style="margin:1%;font-size: 20px;">Flavored Milk(s)</a>
-                                    <a href="javascript:void();" class="btn btn-primary" style="margin:1%;font-size: 20px;">Sharbath(s)</a>
-                                    <a href="javascript:void();" class="btn btn-primary" style="margin:1%;font-size: 20px;">Milkshake(s)</a>
+                                    <a href="javascript:void();" class="btn btn-primary" id="get_all" style="margin:1%;font-size: 20px;">All</a>
+                                    <a href="javascript:void();" class="btn btn-primary" id="get_flavoured_milks" style="margin:1%;font-size: 20px;">Flavored Milk(s)</a>
+                                    <a href="javascript:void();" class="btn btn-primary" id="get_sharbaths" style="margin:1%;font-size: 20px;">Sharbath(s)</a>
+                                    <a href="javascript:void();" class="btn btn-primary" id="get_milk_shakes" style="margin:1%;font-size: 20px;">Milkshake(s)</a>
                                 </div>
 
-                                <div class="row" id="flavoured_milk">
+                                <div class="row" id="flavoured_milks">
                                     <div class="row">
                                         <h1>Flavoured Milk(s)</h1>
                                     </div>
@@ -316,144 +316,140 @@
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="row" id="sharbath">
-                                    <div class="row">
-                                        <h1>Sharbath(s)</h1>
-                                    </div>
+                            <div class="row" id="sharbaths">
+                                <div class="row">
+                                    <h1>Sharbath(s)</h1>
+                                </div>
 
-                                    <div class="card text-white mb-3 col-sm-2">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Carrot Kulukki Sharbath</h5>
-                                            <img src="item_logo.png" class="img-responsive" height="100px">
-                                            <p class="card-text dotted">
-                                                Ingredients : Carrot Syrup + Kulukki Syrup + Water + Sugar Syrup + { Love }
-                                            </p>
-                                            <p class="card-text dotted">
-                                                Allergen : Sugar Syrup
-                                            </p>
-                                            <a href="javascript:void();" class="btn btn-primary">&#8377; 50</a>
-                                        </div>
+                                <div class="card text-white mb-3 col-sm-2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Carrot Kulukki Sharbath</h5>
+                                        <img src="item_logo.png" class="img-responsive" height="100px">
+                                        <p class="card-text dotted">
+                                            Ingredients : Carrot Syrup + Kulukki Syrup + Water + Sugar Syrup + { Love }
+                                        </p>
+                                        <p class="card-text dotted">
+                                            Allergen : Sugar Syrup
+                                        </p>
+                                        <a href="javascript:void();" class="btn btn-primary">&#8377; 50</a>
                                     </div>
+                                </div>
 
-                                    <div class="card text-white mb-3 col-sm-2">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Spicy Kulukki Sharbath</h5>
-                                            <img src="item_logo.png" class="img-responsive" height="100px">
-                                            <p class="card-text dotted">
-                                                Ingredients : Kulukki Syrup + Water + Sugar Syrup + { Love }
-                                            </p>
-                                            <p class="card-text dotted">
-                                                Allergen : Sugar Syrup
-                                            </p>
-                                            <a href="javascript:void();" class="btn btn-primary">&#8377; 30</a>
-                                        </div>
+                                <div class="card text-white mb-3 col-sm-2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Spicy Kulukki Sharbath</h5>
+                                        <img src="item_logo.png" class="img-responsive" height="100px">
+                                        <p class="card-text dotted">
+                                            Ingredients : Kulukki Syrup + Water + Sugar Syrup + { Love }
+                                        </p>
+                                        <p class="card-text dotted">
+                                            Allergen : Sugar Syrup
+                                        </p>
+                                        <a href="javascript:void();" class="btn btn-primary">&#8377; 30</a>
                                     </div>
+                                </div>
 
-                                    <div class="card text-white mb-3 col-sm-2">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Pineapple Kulukki Sharbath</h5>
-                                            <img src="item_logo.png" class="img-responsive" height="100px">
-                                            <p class="card-text dotted">
-                                                Ingredients : Pineapple Syrup + Kulukki Syrup + Water + Sugar Syrup + { Love }
-                                            </p>
-                                            <p class="card-text dotted">
-                                                Allergen : Sugar Syrup
-                                            </p>
-                                            <a href="javascript:void();" class="btn btn-primary">&#8377; 50</a>
-                                        </div>
+                                <div class="card text-white mb-3 col-sm-2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pineapple Kulukki Sharbath</h5>
+                                        <img src="item_logo.png" class="img-responsive" height="100px">
+                                        <p class="card-text dotted">
+                                            Ingredients : Pineapple Syrup + Kulukki Syrup + Water + Sugar Syrup + { Love }
+                                        </p>
+                                        <p class="card-text dotted">
+                                            Allergen : Sugar Syrup
+                                        </p>
+                                        <a href="javascript:void();" class="btn btn-primary">&#8377; 50</a>
                                     </div>
+                                </div>
 
-                                    <div class="card text-white mb-3 col-sm-2">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Nanari Sharbath</h5>
-                                            <img src="item_logo.png" class="img-responsive" height="100px">
-                                            <p class="card-text dotted">
-                                                Ingredients : Nanari Syrup + Water + Sugar Syrup + { Love }
-                                            </p>
-                                            <p class="card-text dotted">
-                                                Allergen : Sugar Syrup
-                                            </p>
-                                            <a href="javascript:void();" class="btn btn-primary">&#8377; 30</a>
-                                        </div>
+                                <div class="card text-white mb-3 col-sm-2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nanari Sharbath</h5>
+                                        <img src="item_logo.png" class="img-responsive" height="100px">
+                                        <p class="card-text dotted">
+                                            Ingredients : Nanari Syrup + Water + Sugar Syrup + { Love }
+                                        </p>
+                                        <p class="card-text dotted">
+                                            Allergen : Sugar Syrup
+                                        </p>
+                                        <a href="javascript:void();" class="btn btn-primary">&#8377; 30</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="row" id="milk_shake">
-                                    <div class="row">
-                                        <h1>Milk Shake(s)</h1>
-                                    </div>
+                            <div class="row" id="milk_shakes">
+                                <div class="row">
+                                    <h1>Milk Shake(s)</h1>
+                                </div>
 
-                                    <div class="card text-white mb-3 col-sm-2">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Rose Milk Shake</h5>
-                                            <img src="item_logo.png" class="img-responsive" height="100px">
-                                            <p class="card-text dotted">
-                                                Ingredients : Rose Syrup + Milk + Ice Cream + { Love }
-                                            </p>
-                                            <p class="card-text dotted">
-                                                Allergen : Milk, Sugar
-                                            </p>
-                                            <a href="javascript:void();" class="btn btn-primary">&#8377; 50</a>
-                                        </div>
+                                <div class="card text-white mb-3 col-sm-2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Rose Milk Shake</h5>
+                                        <img src="item_logo.png" class="img-responsive" height="100px">
+                                        <p class="card-text dotted">
+                                            Ingredients : Rose Syrup + Milk + Ice Cream + { Love }
+                                        </p>
+                                        <p class="card-text dotted">
+                                            Allergen : Milk, Sugar
+                                        </p>
+                                        <a href="javascript:void();" class="btn btn-primary">&#8377; 50</a>
                                     </div>
+                                </div>
 
-                                    <div class="card text-white mb-3 col-sm-2">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Cold Boost</h5>
-                                            <img src="item_logo.png" class="img-responsive" height="100px">
-                                            <p class="card-text dotted">
-                                                Ingredients : Boost + Milk + Sugar Syrup + { Love }
-                                            </p>
-                                            <p class="card-text dotted">
-                                                Allergen : Milk, Sugar Syrup
-                                            </p>
-                                            <a href="javascript:void();" class="btn btn-primary">&#8377; 40</a>
-                                        </div>
+                                <div class="card text-white mb-3 col-sm-2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cold Boost</h5>
+                                        <img src="item_logo.png" class="img-responsive" height="100px">
+                                        <p class="card-text dotted">
+                                            Ingredients : Boost + Milk + Sugar Syrup + { Love }
+                                        </p>
+                                        <p class="card-text dotted">
+                                            Allergen : Milk, Sugar Syrup
+                                        </p>
+                                        <a href="javascript:void();" class="btn btn-primary">&#8377; 40</a>
                                     </div>
+                                </div>
 
-                                    <div class="card text-white mb-3 col-sm-2">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Chocolate Milk Shake</h5>
-                                            <img src="item_logo.png" class="img-responsive" height="100px">
-                                            <p class="card-text dotted">
-                                                Ingredients : Chocolate Syrup + Milk + Ice Cream + { Love }
-                                            </p>
-                                            <p class="card-text dotted">
-                                                Allergen : Milk, Sugar
-                                            </p>
-                                            <a href="javascript:void();" class="btn btn-primary">&#8377; 60</a>
-                                        </div>
+                                <div class="card text-white mb-3 col-sm-2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chocolate Milk Shake</h5>
+                                        <img src="item_logo.png" class="img-responsive" height="100px">
+                                        <p class="card-text dotted">
+                                            Ingredients : Chocolate Syrup + Milk + Ice Cream + { Love }
+                                        </p>
+                                        <p class="card-text dotted">
+                                            Allergen : Milk, Sugar
+                                        </p>
+                                        <a href="javascript:void();" class="btn btn-primary">&#8377; 60</a>
                                     </div>
+                                </div>
 
-                                    <div class="card text-white mb-3 col-sm-2">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Cold Coffee</h5>
-                                            <img src="item_logo.png" class="img-responsive" height="100px">
-                                            <p class="card-text dotted">
-                                                Ingredients : Coffee + Milk + Sugar Syrup + { Love }
-                                            </p>
-                                            <p class="card-text dotted">
-                                                Allergen : Milk, Sugar Syrup
-                                            </p>
-                                            <a href="javascript:void();" class="btn btn-primary">&#8377; 60</a>
-                                        </div>
+                                <div class="card text-white mb-3 col-sm-2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cold Coffee</h5>
+                                        <img src="item_logo.png" class="img-responsive" height="100px">
+                                        <p class="card-text dotted">
+                                            Ingredients : Coffee + Milk + Sugar Syrup + { Love }
+                                        </p>
+                                        <p class="card-text dotted">
+                                            Allergen : Milk, Sugar Syrup
+                                        </p>
+                                        <a href="javascript:void();" class="btn btn-primary">&#8377; 60</a>
                                     </div>
+                                </div>
 
-                                    <div class="card text-white mb-3 col-sm-2">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Vanilla Milk Shake</h5>
-                                            <img src="item_logo.png" class="img-responsive" height="100px">
-                                            <p class="card-text dotted">
-                                                Ingredients : Vanilla Essence + Milk + Ice Cream + { Love }
-                                            </p>
-                                            <p class="card-text dotted">
-                                                Allergen : Milk, Sugar
-                                            </p>
-                                            <a href="javascript:void();" class="btn btn-primary">&#8377; 60</a>
-                                        </div>
+                                <div class="card text-white mb-3 col-sm-2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Vanilla Milk Shake</h5>
+                                        <img src="item_logo.png" class="img-responsive" height="100px">
+                                        <p class="card-text dotted">
+                                            Ingredients : Vanilla Essence + Milk + Ice Cream + { Love }
+                                        </p>
+                                        <p class="card-text dotted">
+                                            Allergen : Milk, Sugar
+                                        </p>
+                                        <a href="javascript:void();" class="btn btn-primary">&#8377; 60</a>
                                     </div>
                                 </div>
                             </div>
@@ -566,5 +562,30 @@
                 </hr>
             </div>
         </section>
+        <script>
+            $(document).ready(
+                function(){
+                    $("#get_all").click(function () {
+                        $("#flavoured_milks").show("slow");
+                        $("#sharbaths").show("slow");
+                        $("#milk_shakes").show("slow");
+                    });
+                    $("#get_flavoured_milks").click(function () {
+                        $("#flavoured_milks").show("slow");
+                        $("#sharbaths").hide("slow");
+                        $("#milk_shakes").hide("slow");
+                    });
+                    $("#get_sharbaths").click(function () {
+                        $("#flavoured_milks").hide("slow");
+                        $("#sharbaths").show("slow");
+                        $("#milk_shakes").hide("slow");
+                    });
+                    $("#get_milk_shakes").click(function () {
+                        $("#flavoured_milks").hide("slow");
+                        $("#sharbaths").hide("slow");
+                        $("#milk_shakes").show("slow");
+                    });
+                });
+        </script>
     </body>
 </html>
