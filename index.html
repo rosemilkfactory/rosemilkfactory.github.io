@@ -572,8 +572,9 @@
         <script>
             $(document).ready(
                 function(){
-                    $("#sharbaths").hide("slow");
-                    $("#milk_shakes").hide("slow");
+                    $("#flavoured_milks").show();
+                    $("#sharbaths").hide();
+                    $("#milk_shakes").hide();
 
                     $("#get_milk_shakes").removeClass("active-tab");
                     $("#get_sharbaths").removeClass("active-tab");
@@ -581,9 +582,9 @@
                     $("#get_flavoured_milks").addClass("active-tab");
 
                     $("#get_all").click(function () {
-                        $("#flavoured_milks").show("slow");
-                        $("#sharbaths").show("slow");
-                        $("#milk_shakes").show("slow");
+                        $("#flavoured_milks").show();
+                        $("#sharbaths").show();
+                        $("#milk_shakes").show();
 
                         $("#get_milk_shakes").removeClass("active-tab");
                         $("#get_sharbaths").removeClass("active-tab");
@@ -591,9 +592,9 @@
                         $("#get_flavoured_milks").removeClass("active-tab");
                     });
                     $("#get_flavoured_milks").click(function () {
-                        $("#flavoured_milks").show("slow");
-                        $("#sharbaths").hide("slow");
-                        $("#milk_shakes").hide("slow");
+                        $("#flavoured_milks").show();
+                        $("#sharbaths").hide();
+                        $("#milk_shakes").hide();
 
                         $("#get_milk_shakes").removeClass("active-tab");
                         $("#get_sharbaths").removeClass("active-tab");
@@ -601,9 +602,9 @@
                         $("#get_flavoured_milks").addClass("active-tab");
                     });
                     $("#get_sharbaths").click(function () {
-                        $("#flavoured_milks").hide("slow");
-                        $("#sharbaths").show("slow");
-                        $("#milk_shakes").hide("slow");
+                        $("#flavoured_milks").hide();
+                        $("#sharbaths").show();
+                        $("#milk_shakes").hide();
 
                         $("#get_milk_shakes").removeClass("active-tab");
                         $("#get_sharbaths").addClass("active-tab");
@@ -611,9 +612,9 @@
                         $("#get_flavoured_milks").removeClass("active-tab");
                     });
                     $("#get_milk_shakes").click(function () {
-                        $("#flavoured_milks").hide("slow");
-                        $("#sharbaths").hide("slow");
-                        $("#milk_shakes").show("slow");
+                        $("#flavoured_milks").hide();
+                        $("#sharbaths").hide();
+                        $("#milk_shakes").show();
 
                         $("#get_milk_shakes").addClass("active-tab");
                         $("#get_sharbaths").removeClass("active-tab");
