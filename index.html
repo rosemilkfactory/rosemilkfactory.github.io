@@ -53,6 +53,13 @@
                 font-size: 35px;
             }
 
+            .active-tab {
+                background-color: hotviolet;
+                border-color: hotpink;
+                font-weight: bold;
+                font-size: 35px;
+            }
+
             .row {
                 width: 100%;
                 margin: 2%;
@@ -178,10 +185,10 @@
                                     <input type="text" id="search_my_shake" name="search_my_shake" placeholder="What are you looking for ?">
                                 </form>-->
                                 <div class="row form-group">
-                                    <a href="javascript:void();" class="btn btn-primary" id="get_all" style="margin:1%;font-size: 20px;">All</a>
                                     <a href="javascript:void();" class="btn btn-primary" id="get_flavoured_milks" style="margin:1%;font-size: 20px;">Flavored Milk(s)</a>
                                     <a href="javascript:void();" class="btn btn-primary" id="get_sharbaths" style="margin:1%;font-size: 20px;">Sharbath(s)</a>
                                     <a href="javascript:void();" class="btn btn-primary" id="get_milk_shakes" style="margin:1%;font-size: 20px;">Milkshake(s)</a>
+                                    <a href="javascript:void();" class="btn btn-primary" id="get_all" style="margin:1%;font-size: 20px;">Show All</a>
                                 </div>
 
                                 <div class="row" id="flavoured_milks">
@@ -565,25 +572,53 @@
         <script>
             $(document).ready(
                 function(){
+                    $("#sharbaths").hide("slow");
+                    $("#milk_shakes").hide("slow");
+
+                    $("#get_milk_shakes").removeClass("active-tab");
+                    $("#get_sharbaths").removeClass("active-tab");
+                    $("#get_all").removeClass("active-tab");
+                    $("#get_flavoured_milks").addClass("active-tab");
+
                     $("#get_all").click(function () {
                         $("#flavoured_milks").show("slow");
                         $("#sharbaths").show("slow");
                         $("#milk_shakes").show("slow");
+
+                        $("#get_milk_shakes").removeClass("active-tab");
+                        $("#get_sharbaths").removeClass("active-tab");
+                        $("#get_all").addClass("active-tab");
+                        $("#get_flavoured_milks").removeClass("active-tab");
                     });
                     $("#get_flavoured_milks").click(function () {
                         $("#flavoured_milks").show("slow");
                         $("#sharbaths").hide("slow");
                         $("#milk_shakes").hide("slow");
+
+                        $("#get_milk_shakes").removeClass("active-tab");
+                        $("#get_sharbaths").removeClass("active-tab");
+                        $("#get_all").removeClass("active-tab");
+                        $("#get_flavoured_milks").addClass("active-tab");
                     });
                     $("#get_sharbaths").click(function () {
                         $("#flavoured_milks").hide("slow");
                         $("#sharbaths").show("slow");
                         $("#milk_shakes").hide("slow");
+
+                        $("#get_milk_shakes").removeClass("active-tab");
+                        $("#get_sharbaths").addClass("active-tab");
+                        $("#get_all").removeClass("active-tab");
+                        $("#get_flavoured_milks").removeClass("active-tab");
                     });
                     $("#get_milk_shakes").click(function () {
                         $("#flavoured_milks").hide("slow");
                         $("#sharbaths").hide("slow");
                         $("#milk_shakes").show("slow");
+
+                        $("#get_milk_shakes").addClass("active-tab");
+                        $("#get_sharbaths").removeClass("active-tab");
+                        $("#get_all").removeClass("active-tab");
+                        $("#get_flavoured_milks").removeClass("active-tab");
                     });
                 });
         </script>
